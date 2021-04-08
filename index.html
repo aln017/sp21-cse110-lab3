@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Allison N"
         <title>Allison's Journal</title>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">  
     
@@ -37,7 +39,7 @@
                 </section>
                 <section>
                 <h5>Daily vent:</h5>
-                <strong>My sister ate all the hummus when I said I wanted to eat it.</strong>
+                <strong>My sister ate all the hummus when I said I wanted to eat it. I am ~strongly~ disappointed.</strong>
                 </section>  
                 <section>
                 <h3>To-Do List:</h3>
@@ -79,6 +81,10 @@
                 <i>I love boba.</i>
                 <span><a href="https://www.youtube.com/watch?v=yScXeTNiVGY">🥤</a></span>
                 <span><em>Click the drink to look at boba!</em></span>
+                <details>
+                    <summary>My favorite drink!</summary>
+                    <p>My favorite boba drink is a Jasmine Green Tea with Cheese Foam. The cheese part may sound weird, but it makes it perfectly salty and creamy so that it complements the tea perfectly!</p>
+                  </details>
                 </section>  
                 <section>
                 <h3>To-Do List:</h3>
@@ -143,8 +149,59 @@
             <br>
             <div class="form">
                 <form>
-                    <label for="food">What's your favorite food?</label><br>
-                    <input type="text" id="food" name="food"><br>
+                    <textarea id="newjournal" name="newjournal" rows="4" cols="50">Tell me about your day! Tell me what day you're writing about, about your day, things you have to do, and pictures that make you happy!</textarea>
+                    <fieldset>
+                        <legend>Journal Entry:</legend>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+
+                        <label for="cdate">Date:</label>
+                        <input type="date" id="cdate" name="cdate">
+
+                        <label for="day">What day is it?</label>
+
+                            <select name="day" id="day">
+                                <option value="Sunday">Sunday</option>
+                                <option value="Monday">Monday</option>
+                                <option value="Tuesday">Tuesday</option>
+                                <option value="Wednesday">Wednesday</option>
+                                <option value="Thursday">Thursday</option>
+                                <option value="Friday">Friday</option>
+                                <option value="Saturday">Saturday</option>
+                            </select>
+                        <br>
+                        <label for="fed">Did you eat well today?</label><br>
+                            <input type="radio" id="yes" name="yes" value="yes">
+                            <label for="yes">Yes!</label><br>
+                            <input type="radio" id="no" name="no" value="no">
+                            <label for="no">No :(</label><br>
+
+                        <label for="browser">Briefly describe your day:</label>
+                        <input list="browsers" name="browser" id="browser">
+                        <datalist id="browsers">
+                        <option value="Good">
+                        <option value="Bad">
+                        <option value="Okay">
+                        </datalist>
+
+                        <br>
+                        <label for="food">What's your favorite food?</label><br>
+                        <input type="text" id="food" name="food"><br>
+
+                        <label for="noodle">What's the best type of noodle dish? (Check all that apply).</label>
+                        <input type="checkbox" id="rame" name="rame" value="rame">
+                        <label for="rame">Ramen</label>
+                        <input type="checkbox" id="spag" name="spag" value="spag">
+                        <label for="spag">Spaghetti</label>
+                        <input type="checkbox" id="pho" name="pho" value="pho">
+                        <label for="pho">Pho</label>
+                        <input type="checkbox" id="pad" name="pad" value="pad">
+                        <label for="pad">Pad Thai</label>
+                        <input type="checkbox" id="oth" name="oth" value="oth">
+                        <label for="oth">Other</label><br>
+
+                        <button type="button">Submit!</button>
+                    </fieldset>
                 </form>
 
                 <img src="hungry.gif" alt="eating" width="200">
