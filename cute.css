@@ -4,6 +4,7 @@
     }
 }
 
+/* background color */
 body {
     background-color: #ffdfd9;
 }
@@ -24,6 +25,7 @@ footer {
     padding: 10px 10px 10px 10px;
 }
 
+/* doggo gallery */
 .photos {
     display: grid;
     justify-items: center;
@@ -32,11 +34,38 @@ footer {
     grid-template-rows: 300px;
     align-items: center;
 }
+* {
+    font-family: 'Josefin Sans', sans-serif;
+}
 
 .shib {
     justify-self: center;
     background-color:white;
 
+}
+
+p.cap {
+    text-transform: lowercase;
+    padding: 1px 1px 1px 1px;
+    text-align: center;
+}
+
+.shib + h6 {
+    margin: auto;
+    font-style:oblique;
+}
+
+
+#newjournal {
+    text-align: center;
+}
+
+a::after {
+    content: "♡";
+}
+
+[href] {
+    color: red;
 }
 
 .shib:hover{
@@ -66,6 +95,12 @@ h1 {
     position: static;
 }
 
+h1 + h5 {
+    text-align:center;
+    text-decoration:underline;
+    margin-bottom: 5px;
+}
+
 h2 {
     text-decoration: underline;
     text-align: center;
@@ -86,18 +121,13 @@ h4 {
     max-width: 1000px;
     max-height: 1000px;
 }
-
-button:hover {
-    background-color: pink;
-}
-
 .journals {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.jj {
+.journals .jj {
     background-color: white;
     font-family: 'Josefin Sans', sans-serif;
     width: 40%;
@@ -108,7 +138,7 @@ button:hover {
     margin-bottom: 50px;
     margin-right: 25px;
 }
-img {
+img, video, audio {
 
     padding: 1pt 1pt 1pt 1pt;
     margin: 10px 10px 10px 10px;
@@ -120,8 +150,15 @@ img {
 
 }
 
+ol > li {
+    font-style: italic;
+}
 
+img ~ video {
+    margin: auto;
+    background-color:pink;
+}
 
-label {
-    display: inline-block;
+button:hover {
+    background-color: pink;
 }
